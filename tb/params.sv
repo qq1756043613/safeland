@@ -1,0 +1,17 @@
+`define DMST_AMT             3
+`define DSLV_AMT             4
+`define DOUTSTANDING_AMT     8
+`define DMST_ID_W            5
+`define DSLV_ID_W            5
+`define DDATA_WIDTH          64
+`define DADDR_WIDTH          32
+`define DTRANS_BURST_W       2
+`define DTRANS_DATA_LEN_W    4
+`define DTRANS_DATA_SIZE_W   3
+`define DTRANS_WR_RESP_W     2
+`define DPROT_WIDTH          3
+`define AW                   5'b00001
+`define W                    5'b00010
+`define AR                   5'b00100
+`define R                    5'b01000
+`define RAND                 5'b10000
