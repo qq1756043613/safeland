@@ -1,0 +1,12 @@
+make all PAT_NAME=test_error_inject_W
+make all PAT_NAME=test_error_inject_comb_dsp1
+make all PAT_NAME=test_error_inject_comb_sa1
+make all PAT_NAME=test_error_inject_comb_sa2
+make all PAT_NAME=test_error_inject_comb_sa3
+make all PAT_NAME=test_error_inject_comb_sa4
+make all PAT_NAME=test_error_inject_IO_R
+make all PAT_NAME=test_error_inject_IO_W
+make all PAT_NAME=test_error_inject_R1
+make all PAT_NAME=test_error_inject_R2
+make all PAT_NAME=test_error_inject_R3
+make all PAT_NAME=test_error_inject_fifo
