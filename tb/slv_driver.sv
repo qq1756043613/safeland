@@ -94,7 +94,7 @@ task slv_driver::monitor_bus();
   @vif.drv_cb;
   fork
     begin
-      if(|vif.s_AWVALID)==1) begin
+      if((|vif.s_AWVALID)==1) begin
         wbid[wwptr] = vif.s_AWID;
         wwptr = wwptr+1;
       end

@@ -171,7 +171,7 @@ task mst_driver::driver_bus();
         req.m_BID   <= 0;
       end
     end
-    if((!req.mode & `AR)) begin
+    if((req.mode & `AR)) begin
       //@vif.drv_cb;
       while(1) begin
         arhandshake = req.m_ARVALID & vif.m_ARREADY;

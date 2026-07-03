@@ -25,7 +25,7 @@ class slv_sequence extends uvm_sequence #(transaction);
 
   virtual task body();
 
-    tr = transaction::type_id::create("tr");
+    tr = transaction#()::type_id::create("tr");
     start_item(tr);
     set_special();
     finish_item(tr);

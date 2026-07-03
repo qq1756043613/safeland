@@ -151,12 +151,12 @@ class mst_sequence extends uvm_sequence #(transaction);
 
   virtual task body();
 
-    tr = transaction::type_id::create("tr");
+    tr = transaction#()::type_id::create("tr");
     start_item(tr);
     if(!(mode % `RAND)==1) begin
       set_special();
       if(tr.mode == `AW + `RAND || tr.mode == `W + `RAND)
-        tr.random(tr.m_AWID); //seed
+        void'(tr.randomize());
     end
     else begin
       set_special();
